@@ -2,19 +2,9 @@ import * as React from 'react';
 import * as ReactRedux from 'react-redux'
 import styled, {keyframes} from 'styled-components';
 import {fetchRandomUser, State} from '../redux';
-import {ApiTypes} from '../api-types';
+import {ApiTypes} from '../redux/api-types';
 
 // Styled-components
-
-const rotationAnimation = keyframes`
-  from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-`;
 
 const AppWrapper = styled.div`
   background-color: #eee;
@@ -29,12 +19,28 @@ const FetchButton = styled.button`
   height: 60px;
 `;
 
+
+const rotationAnimation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
 const AnimationIndicator = styled.span`
+  position: absolute;
+  margin: auto;
   background-color: palevioletred;
   animation: ${rotationAnimation} 2s linear infinite;
   width: 40px;
   height: 40px;
-  margin: 20px;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 // React-component
