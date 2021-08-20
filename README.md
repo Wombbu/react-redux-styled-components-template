@@ -1,6 +1,8 @@
+⚠️ This repository is dated. I do not recommend using Redux by default for your projects. ⚠️
+
 # A React boilerplate with all the good stuff!
 
-### Typescript ✖️ React ✖️ Redux ✖️ styled-components 💅 
+### Typescript ✖️ React ✖️ Redux ✖️ styled-components 💅
 
 With built-in Redux-store, React-redux bindings and an action to fetch data from www.randomuser.me/api.
 
